@@ -1,0 +1,64 @@
+
+body{
+    background-image: url(bg.jpg);
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    background-size: 1500px 620px;
+    text-align: center;
+    font-size: 22px;
+    color: White;
+}
+h1{
+    color: white;
+    font-size: 60px;
+    font-family: cursive;
+}
+.form1{
+    background:rgba(0,0,0,0.6);
+    padding: 24px;
+    margin-top:0px;
+    width: 28%;
+    position: absolute;
+    left:34%;
+    border-radius: 15px;
+}
+input{
+    width: 330px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+}
+input[type="text"],input[type="password"]{
+    font-size: 18px;
+}
+input[type="email"]{
+    font-size: 18px;
+}
+input[type="submit"]{
+    font-size: 20px;
+    height: 40px;
+    background-color: #00FF7F;
+
+}
+
+input[type="submit"]:hover{
+    color:white;	
+    background-color: blue;	
+}
+select{
+    size:400px;
+    height: 30px;
+    width: 252px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+input[type="radio"]
+{
+    font-size: 14px;
+    size: 10px;
+    height:12px;
+}
+#selection{
+    margin-bottom: 20px;
+}

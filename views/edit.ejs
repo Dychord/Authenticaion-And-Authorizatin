@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="/stylesheets/userRegis.css">
+</head>
+<body>
+    <div class="main">
+		<h1>Edit User </h1>
+		<div class="form1">
+			<form  method="post" action="/update/<%= user._id %>">
+				<input type="text"  placeholder="username" name="username" value="<%= user.username %>"><br><br>		
+				<input type="password"  placeholder="password" name="password" value="<%= user.password %>"><br><br>		
+				<input type="text" id="req1" placeholder="age.." name="age" value="<%= user.age %>"><br><br>		
+				<input type="text" id="req3" placeholder="phone number..." name="phoneNumber" value="<%= user.phoneNumber %>"><br><br>
+				Gender:
+				<select id="selection" name="gender">
+					<option>Others</option>
+					<option>Male</option>
+					<option>Female</option>
+				</select><br>
+				<input type="submit" value="Update User"><br><br>
+				<a href="/delete/<%= user._id %>">Delete user</a>
+
+			</form>
+		</div>	
+	</div>
+
+</body>
+</html>

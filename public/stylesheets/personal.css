@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+
+}
+
+body{
+    background-color: skyblue;
+    text-align: center;
+    font-size: 22px;
+    color: White;
+}
+h2{
+    margin-top: 20px;
+}
+h3{
+    margin-top: 10%;
+    font-size: 40px;
+}
+
+a{
+    display: inline-block;
+    margin-top: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    padding: 10px;
+}

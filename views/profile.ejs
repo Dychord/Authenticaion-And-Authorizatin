@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/read.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-sky-500 p-10 text-white">
+        <div class="nav mb-10">
+            <a href="/logout" class="text-black font-semibold">Logout</a>
+        </div>
+        <h1 class="text-3xl tracking-tighter mb-4">All Users</h1>
+        <h1 class="text-2xl tracking-tighter mb-4">Welcome <%= displayName %></h1>
+        <div class="users flex gap-5 flex-wrap">
+           <% if(user.length > 0){ %>
+            <% user.forEach(function(users){ %>
+                <div class="user w-72 p-4 bg-sky-900 rounded-lg">
+                    <h3 class="text-xl mt-2 tracking-tighter "><%= users.username %></h3>
+                    <h3 class="text-xl mt-2 tracking-tighter "><%= users.age %></h3>
+                    <div class="flex gap-3 mt-5">
+                        <a href="/edit/<%= users._id %>" class="text-zinc-300">Edit User</a>
+                        <a href="/delete/<%= users._id %>" class="text-red-500">Delete User</a>
+                    </div>
+                </div>
+            <% }) %>
+           <% } else{ %>
+                    <h3 class="text-3xl tracking-tighter mb-4">No users yet :(</h3>
+           <% } %>
+            
+        </div>
+    </div>
+</body>
+</html>
